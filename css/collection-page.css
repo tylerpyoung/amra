@@ -89,7 +89,7 @@ a, a:link, a:visited {
 }
 
 .wheel-details-image {
-	height:  300px;
+	padding-bottom: 100% ;
 	width:  100%;
 }
 
@@ -222,4 +222,34 @@ a, a:link, a:visited {
   height: 15px;
   background: #0563AF;
   width: 100%;
+}
+
+
+/* */
+
+
+.padding-right-5{
+	padding-right: 3rem!important;
+}
+
+
+
+@media screen and (max-width: 875px) {
+	.padding-right-5{
+		padding-right: 0rem!important;
+	}
+
+	.american-racing-stylized {
+		margin-bottom: 400px;
+		margin-left: 15px;
+		font-size: 4em;
+	}
+
+	.carousel-container {
+		height: 450px;
+	}
+
+	.right-section-container {
+		margin-top: 0 !important;
+	}
 }
