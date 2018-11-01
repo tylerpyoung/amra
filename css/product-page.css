@@ -1,0 +1,125 @@
+/* Product Page */
+html,
+body
+{
+    overflow-x: hidden;
+
+    max-width: 100%;
+}
+
+/* background */
+.details-background
+{
+    width: 100%;
+    margin: 0;
+
+    background: linear-gradient(
+    to bottom right,
+    #e4e3d8,
+    #e4e3d8  10%,
+    #efeee7  10%,
+    #efeee7  20%,
+    #f7f6f4  20%,
+    #f7f6f4  30%,
+    #fff  30%
+    );
+}
+
+.bg-tan
+{
+    background: #f5f3e8;
+}
+
+
+.large-image
+{
+    width: 100%;
+    padding-bottom: 100%;
+}
+
+.small-image-container
+{
+    justify-content: center;
+    align-items: center;
+}
+
+.small-image
+{
+    width: 100%;
+    padding-bottom: 100%;
+}
+
+.vehicle-image
+{
+    width: 100%;
+    height: 450px;
+}
+
+.slide-in
+{
+    position: relative;
+
+    opacity: 0;
+}
+
+
+/*animation elements sliding in*/
+.slide-in.slide-left
+{
+    visibility: hidden;
+
+    -webkit-transition: all .3s linear;
+       -moz-transition: all .3s linear;
+         -o-transition: all .3s linear;
+            transition: all .3s linear;
+    -webkit-transform: translate3d(-100px, 0px, 0px);
+       -moz-transform: translate3d(-100px, 0px, 0px);
+        -ms-transform: translate(-100px, 0px);
+         -o-transform: translate(-100px, 0px);
+            transform: translate3d(-100px, 0px, 0px);
+
+    opacity: 0;
+}
+
+.slide-in.slide-left.in-view
+{
+    visibility: visible;
+
+    -webkit-transform: translate3d(0px, 0px, 0px);
+       -moz-transform: translate3d(0px, 0px, 0px);
+        -ms-transform: translate(0px, 0px);
+         -o-transform: translate(0px, 0px);
+            transform: translate3d(0px, 0px, 0px);
+
+    opacity: 1;
+}
+
+.slide-in.slide-right
+{
+    visibility: hidden;
+
+    -webkit-transition: all .5s linear;
+       -moz-transition: all .5s linear;
+         -o-transition: all .5s linear;
+            transition: all .5s linear;
+    -webkit-transform: translate3d(500px, 0px, 0px);
+       -moz-transform: translate3d(500px, 0px, 0px);
+        -ms-transform: translate(500px, 0px);
+         -o-transform: translate(500px, 0px);
+            transform: translate3d(500px, 0px, 0px);
+
+    opacity: 0;
+}
+
+.slide-in.slide-right.in-view
+{
+    visibility: visible;
+
+    -webkit-transform: translate3d(0px, 0px, 0px);
+       -moz-transform: translate3d(0px, 0px, 0px);
+        -ms-transform: translate(0px, 0px);
+         -o-transform: translate(0px, 0px);
+            transform: translate3d(0px, 0px, 0px);
+
+    opacity: 1;
+}

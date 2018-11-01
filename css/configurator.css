@@ -1,0 +1,537 @@
+.clear {
+  clear: both;
+}
+
+.add_config_to_cart {
+  display: none;
+}
+
+#config-modal {
+  height: 100%;
+  overflow: hidden;
+}
+
+#config-modal .modal-header,
+#config-modal .modal-footer {
+  position: absolute;
+  height: 100px;
+  width: 100%;
+}
+
+#config-modal .modal-header:after {
+  content: ' ';
+  background-color: rgba(0, 0, 0, 0.2);
+  width: calc(100% - 100px);
+  height: 1px;
+  bottom: 0px;
+  position: absolute;
+}
+
+#config-modal .modal-footer {
+  bottom: 0;
+  padding-top: 25px;
+}
+
+#config-modal .modal-footer .btn {
+  margin: 0 0 0 15px;
+}
+
+#config-modal .modal-footer:before {
+  content: ' ';
+  background-color: rgba(0, 0, 0, 0.2);
+  width: calc(100% - 100px);
+  height: 1px;
+  top: 0;
+  position: absolute;
+}
+
+#config-modal .modal-dialog {
+  margin: 15px auto;
+  width: calc(100% - 30px);
+  height: calc(100% - 30px);
+}
+
+#config-modal .modal-content {
+  height: 100%;
+}
+
+#config-modal .modal-body {
+  bottom: 100px;
+  top: 100px;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  padding: 0 15px;
+}
+
+#config-modal .modal-body .row {
+  height: 100%;
+}
+
+#config-modal .config-option-col {
+  background-color: #181818;
+  overflow: scroll;
+}
+
+#config-modal .config-option-col .config-option:not(:nth-last-child(1)) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#config-modal .config-option-col .config-option {
+  display: block;
+  position: relative;
+  padding: 40px 0;
+}
+
+#config-modal .config-option-col .config-option h5 {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#config-modal .config-option-col .config-option h5.config-option-status {
+  margin: 0 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#config-modal .config-option-col .config-option h5.config-option-status .fa-check {
+  display: none;
+}
+
+#config-modal .config-option-col .config-option h5.config-option-status .fa-long-arrow-right {
+  display: none;
+}
+
+#config-modal .config-option-col .config-option.active {
+  padding: 34.5px 0;
+}
+
+#config-modal .config-option-col .config-option.active h5.config-option-status {
+  color: white;
+}
+
+#config-modal .config-option-col .config-option.active h5.config-option-status .fa-long-arrow-right {
+  display: inline-block;
+}
+
+#config-modal .config-option-col .config-option.active h5.config-option-status .fa-check {
+  display: none;
+}
+
+#config-modal .config-option-col .config-option.active h5:first-of-type {
+  padding-bottom: 10px;
+  border-bottom: 2px solid red;
+}
+
+#config-modal h5.config-price {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#config-modal .config-selection-col {
+  overflow: scroll;
+}
+
+#config-modal .config-wheel-carousel-col:after {
+  content: ' ';
+  height: 80%;
+  width: 1px;
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 10%;
+}
+
+#config-modal .config-wheel-carousel-col .wp-full-height {
+  padding: 30px 60px 60px;
+}
+
+#config-modal .config-wheel-carousel-wrapper {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#config-modal .modal-body div[class^="col-"] {
+  height: 100%;
+}
+
+#config-modal .config-selection,
+#config-modal .config-option-wrapper {
+  height: 100%;
+}
+
+#config-modal .config-selection-item:not(:nth-last-child(1)) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#config-modal .config-selection-item {
+  display: block;
+  padding: 10px 0;
+}
+
+#config-modal .config-selection-item img {
+  display: inline-block;
+  width: 40%;
+}
+
+#config-modal .config-selection-item h5 {
+  display: inline-block;
+}
+
+#config-modal .config-selection-finish .config-selection-item {
+  padding: 45px 0;
+}
+
+#config-modal .config-selection-finish .config-selection-item a {
+  display: inline-block;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.54);
+  border: solid rgba(0, 0, 0, 0.54) 1px;
+  padding: 3px 5px;
+  margin-left: 25px;
+  position: relative;
+  padding-left: 20px;
+  color: rgba(0, 0, 0, 0.97);
+}
+
+#config-modal .config-selection-finish .config-selection-item .pa-color-swatch-swatch {
+  background-color: #000000;
+  width: 10px;
+  height: 70%;
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: inline-block;
+}
+
+#config-modal .config-selection-size .config-selection-item {
+  padding: 45px 0;
+}
+
+#config-modal .config-selection-size .config-selection-item .pa-option {
+  float: right;
+  display: inline-block;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.54);
+  border: solid rgba(0, 0, 0, 0.54) 1px;
+  padding: 3px 5px;
+  margin-top: 7.5px;
+  margin-left: 7.5px;
+}
+
+#config-modal .config-selection-size .config-selection-item .pa-option.active {
+  border-color: red;
+}
+
+#config-modal .config-selection-summary .config-selection-item {
+  border-bottom: 0;
+}
+
+#config-modal .config-selection-summary .config-selection-item h5 {
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 15px;
+}
+
+#config-modal .config-selection-summary .config-selection-item h5:not(:nth-last-child(1)) span {
+  color: #888;
+}
+
+#config-modal .config-selection-container {
+  display: none;
+}
+
+#config-modal .config-selection-container.active {
+  display: block;
+}
+
+#config-modal .config-selection-finish .config-selection-item a.active {
+  border-color: red;
+}
+
+#config-modal .config-selection-cap .config-selection-item.active,
+#config-modal .config-selection-star .config-selection-item.active {
+  border: 2px solid red;
+}
+
+@media only screen and (min-width: 1200px) {
+  #config-modal .config-option-wrapper {
+    padding: 0 40px;
+  }
+  #config-modal .config-selection {
+    padding: 0 20px;
+  }
+  #config-modal .config-wheel-carousel-col .wp-full-height {
+    padding: 30px 20% 60px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #config-modal {
+    overflow-y: auto;
+  }
+  #config-modal .modal-body {
+    overflow-y: scroll;
+  }
+  #config-modal .modal-body div[class^="col-"] {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #config-modal h5.config-price {
+    display: block;
+    margin-right: 0;
+  }
+}
+
+#config-modal-mobile {
+  height: 100%;
+  overflow: hidden;
+}
+
+#config-modal-mobile .modal-header {
+  position: absolute;
+  height: 90px;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  background: white;
+  z-index: 1;
+}
+
+#config-modal-mobile .modal-footer {
+  position: absolute;
+  height: auto;
+  width: 100%;
+  padding: 15px;
+  bottom: 0;
+  background: white;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  padding-top: 25px;
+}
+
+#config-modal-mobile .modal-footer .arrow-container {
+  padding: 20px 0;
+}
+
+#config-modal-mobile .modal-footer .btn {
+  margin: 0 0 0 15px;
+}
+
+#config-modal-mobile .modal-dialog {
+  margin: 15px auto;
+  width: calc(100% - 30px);
+  height: calc(100% - 30px);
+}
+
+#config-modal-mobile .modal-content {
+  height: 100%;
+}
+
+#config-modal-mobile .modal-body {
+  bottom: 100px;
+  top: 90px;
+  overflow-y: scroll;
+  position: absolute;
+  width: 100%;
+  padding: 0 15px;
+}
+
+#config-modal-mobile .modal-body .row {
+  height: 100%;
+}
+
+#config-modal-mobile #config-wheel-carousel-mobile .slick-list {
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+#config-modal-mobile .config-option-wrapper {
+  width: 100%;
+}
+
+#config-modal-mobile .config-option-wrapper a i {
+  margin: 0;
+}
+
+#config-modal-mobile .config-option-wrapper a i,
+#config-modal-mobile .config-option-wrapper .config-option {
+  padding: 5px 0;
+}
+
+#config-modal-mobile .config-option-wrapper .config-option {
+  display: none;
+  text-align: center;
+}
+
+#config-modal-mobile .config-option-wrapper .config-option.active {
+  display: inline-block;
+  border-bottom: 2px red solid;
+}
+
+#config-modal-mobile h5.config-price {
+  display: inline-block;
+}
+
+#config-modal-mobile .config-wheel-carousel-wrapper {
+  padding: 5px 20% 30px;
+}
+
+#config-modal-mobile .config-selection,
+#config-modal-mobile .config-option-wrapper {
+  position: relative;
+  padding: 5px;
+}
+
+#config-modal-mobile .config-selection {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 15px 30px 30px;
+}
+
+#config-modal-mobile .config-selection #config-selection-caps-mobile,
+#config-modal-mobile .config-selection #config-selection-stars-mobile {
+  width: 100%;
+}
+
+#config-modal-mobile .config-selection-item {
+  padding: 10px 0;
+  text-align: center;
+}
+
+#config-modal-mobile .config-selection-item img {
+  margin: 0 auto;
+}
+
+#config-modal-mobile .config-selection-carousel-mobile-button {
+  width: auto;
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 34px;
+  background: transparent;
+  color: rgba(0, 0, 0, 0.84);
+  padding: 0 0;
+}
+
+#config-modal-mobile .config-selection-carousel-mobile-button.carousel-button-left {
+  left: auto;
+  right: 100%;
+}
+
+#config-modal-mobile .config-selection-size .config-selection-item:not(:nth-last-child(1)) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#config-modal-mobile .config-selection-size .config-selection-item {
+  text-align: left;
+  padding: 15px 0;
+}
+
+#config-modal-mobile .config-selection-size .config-selection-item h5 {
+  display: inline-block;
+}
+
+#config-modal-mobile .config-selection-size .config-selection-item .pa-option {
+  float: right;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.54);
+  border: 1px solid rgba(0, 0, 0, 0.54);
+  padding: 3px 5px;
+  margin-top: 7.5px;
+  margin-left: 7.5px;
+}
+
+#config-modal-mobile .config-selection-size .config-selection-item .pa-option.active {
+  border-color: red;
+}
+
+#config-modal-mobile .config-selection-summary .config-selection-item {
+  text-align: left;
+  border-bottom: 0;
+}
+
+#config-modal-mobile .config-selection-summary .config-selection-item h5 {
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 15px;
+}
+
+#config-modal-mobile .config-selection-summary .config-selection-item h5:not(:nth-last-child(1)) span {
+  color: #888;
+}
+
+#config-modal-mobile .config-selection-finish .config-selection-item:not(:nth-last-child(1)) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#config-modal-mobile .config-selection-finish .config-selection-item {
+  padding: 10px 0;
+}
+
+#config-modal-mobile .config-selection-finish .config-selection-item a {
+  display: inline-block;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.54);
+  border: solid rgba(0, 0, 0, 0.54) 1px;
+  padding: 3px 5px;
+  position: relative;
+  padding-left: 20px;
+  color: rgba(0, 0, 0, 0.97);
+}
+
+#config-modal-mobile .config-selection-finish .config-selection-item .pa-color-swatch-swatch {
+  background-color: #000000;
+  width: 10px;
+  height: 70%;
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: inline-block;
+}
+
+#config-modal-mobile .config-selection-container {
+  position: absolute;
+  left: 110%;
+}
+
+#config-modal-mobile .config-selection-container.active {
+  display: block;
+  position: relative;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  left: 0;
+}
+
+#config-modal-mobile .config-selection-finish .config-selection-item a.active {
+  border-color: red;
+}
+
+#config-modal-mobile .config-selection-cap .config-selection-item.active {
+  border: 2px solid red;
+}
+
+#config-modal-mobile #config-selection-caps-mobile .config-selection-item.active,
+#config-modal-mobile #config-selection-stars-mobile .config-selection-item.active {
+  border-bottom: 2px solid red;
+}

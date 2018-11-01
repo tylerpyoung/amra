@@ -1,0 +1,12 @@
+.photo-container, .wheel-dropdown-container {
+	box-sizing: content-box;
+}
+
+.wheel-dropdown-photo {
+	height: 150px;
+	border: solid 1em transparent;
+}
+
+.shop-collection-container {
+
+}

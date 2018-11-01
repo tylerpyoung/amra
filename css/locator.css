@@ -1,0 +1,409 @@
+.section-header,
+.section-sub-header,
+.product-header,
+.article-header,
+.locator-result-list .locator-result-item .result-item-header,
+.locator-result-list .locator-result-item .result-item-directions,
+.locator-result-list .locator-result-item .result-item-phone {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+}
+
+.wps-locator-search-wrap {
+  width: 100%;
+}
+
+.wps-locator-utils-wrap {
+  overflow: auto;
+}
+
+.wps-input-group-addon {
+  border-top: 0 !important;
+}
+
+.locator-result-item i {
+  color: red;
+}
+
+.wps-locator-result-list .locator-result-item .result-item-header {
+  font-weight: 400;
+}
+
+.wps-locator-warning {
+  /* background-color: red !important; */
+  padding: 5px;
+  font-size: 20px !important;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+}
+
+.wps-locator-result-list .locator-result-item.active:after {
+  background-color: red !important;
+}
+
+.wps-locator-map-wrap,
+.wps-locator-utils-wrap,
+.dealer-list {
+  height: 650px;
+}
+
+.wps-locator-scroll-wrap .wps-locator-result-list {
+  padding-bottom: 0px;
+}
+
+.wps-locator-scroll-wrap {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  height: 100% !important;
+  overflow-y: scroll;
+  /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
+}
+
+.wps-locator-warning-mobile {
+  display: none;
+}
+
+#locator-search-top {
+  display: none;
+  margin: 0 -15px;
+  padding: 0 15px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #dedede;
+}
+
+#locator-row .wps-locator-map-wrap {
+  min-height: 280px;
+}
+
+#locator-row>[class^="col-"] {
+  padding: 0px;
+  /*padding-bottom: 5px;*/
+}
+
+#locator-row .wps-form-control, input[type="text"].wps-form-control {
+  font-family: "Roboto", sans-serif;
+  outline: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .wps-locator-result-list .locator-result-item.active:after {
+    /* content: none !important; */
+  }
+  .wps-locator-result-list .locator-result-item.active {
+    /* background-color: transparent !important; */
+  }
+  .wps-locator-warning-mobile {
+    display: block;
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    text-align: center;
+    background-color: #0082c9;
+    /* background-color: red !important; */
+    color: #fff;
+    padding: 5px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+  }
+  .wps-locator-map-wrap,
+  .wps-locator-utils-wrap,
+  .dealer-list {
+    /* height: 450px; */
+    height: auto;
+    min-height: 300px;
+  }
+  .wps-locator-utils-wrap form {
+    display: none;
+  }
+  .result-item-header,
+  .result-item-directions,
+  .result-item-phone {
+    font-size: 1.2em;
+  }
+  .wps-locator-scroll-wrap .wps-locator-result-list .locator-result-item {
+    padding: 20px;
+  }
+  #locator-content {
+    -webkit-transform: none !important;
+    -ms-transform: none !important;
+    transform: none !important;
+  }
+  #locator-search-top {
+    display: block;
+  }
+  #locator-search-top .wps-form-control,
+  input[type="text"].wps-form-control {
+    height: 50px;
+  }
+  #locator-row .wps-locator-result-list .locator-result-item .result-item-address {
+    font-size: .9em;
+    line-height: 2em;
+    letter-spacing: 1px;
+  }
+  /*  Mobile fixed top Map */
+  #locator-search-top,
+  #locator-row .col-md-8 {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+  }
+  #locator-row .col-md-8 {
+    position: absolute;
+    top: -10000px;
+    left: -10000px;
+    /* Comment out above SHOW MAP in mobile */
+    height: calc(100% - 280px);
+    top: 101px;
+    overflow: hidden;
+  }
+  #locator-row .wps-locator-result-list {
+    /* padding-top: 330px */
+  }
+  #locator-row .wps-locator-scroll-wrap {
+    padding-bottom: 0px;
+    padding-top: 50px;
+    /* Comment out above and Uncomment below to SHOW MAP in mobile */
+    /* min-height: 179px;
+        height: 179px;
+        position: fixed;
+        bottom: 0px; */
+    /* Leave Below */
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .wps-input-group,
+  .wps-form-control,
+  .wps-locator-search-wrap input[type="text"].wps-form-control {
+    height: 70px;
+  }
+  .wps-locator-utils-wrap form {
+    position: absolute;
+    top: 0;
+    z-index: 999;
+  }
+  #locator-content .wps-locator-utils-wrap .wps-locator-scroll-wrap {
+    padding-top: 70px;
+  }
+}
+
+.locator-scroll {
+  /* overflow: scroll; */
+}
+
+.wps-input-group,
+.wps-form-control,
+input[type="text"].wps-form-control {
+  font-weight: 300;
+}
+
+.result-item-header,
+.result-item-directions,
+.result-item-phone {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: .1em;
+  color: black;
+  font-size: 17px;
+}
+
+.locator-search-wrap .input-group {
+  background-color: #f9f9f9;
+}
+
+.locator-search-wrap .input-group-addon {
+  background-color: transparent;
+  border-left: 0;
+  border-right: 0;
+}
+
+.locator-search-wrap .input-group-addon>img {
+  width: 15px;
+}
+
+.locator-search-wrap .form-control {
+  border-left: 0;
+  border-right: 0;
+  background-color: transparent;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.15em;
+  height: 44px;
+  padding-left: 5px;
+}
+
+.locator-scroll-wrap {
+  overflow-y: auto;
+  height: calc(100% - 60px);
+}
+
+.locator-result-list {
+  padding-bottom: 30px;
+}
+
+.wps-locator-result-list .locator-result-item {
+  text-align: left;
+}
+
+.wps-form-control,
+input[type="text"].wps-form-control {
+  border-top: 0;
+  border-bottom: 1px solid #dedede;
+}
+
+.locator-result-list .locator-result-item {
+  border-bottom: 1px solid #dedede;
+  color: #000;
+  padding: 35px 20px;
+  display: block;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.locator-result-list .locator-result-item:hover,
+.locator-result-list .locator-result-item:active,
+.locator-result-list .locator-result-item:focus {
+  color: #000;
+  text-decoration: none;
+  outline: none;
+}
+
+.locator-result-list .locator-result-item.active {
+  background-color: #efefef;
+}
+
+.locator-result-list .locator-result-item.active:after {
+  background-color: #cf202f;
+  content: '';
+  display: block;
+  height: 3px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.locator-result-list .locator-result-item:last-child {
+  border-bottom: 0;
+}
+
+.locator-result-list .locator-result-item .result-item-header {
+  display: inline-block;
+}
+
+.locator-result-list .locator-result-item .result-item-directions {
+  color: #000;
+}
+
+.locator-result-list .locator-result-item .result-item-directions:hover,
+.locator-result-list .locator-result-item .result-item-directions:active,
+.locator-result-list .locator-result-item .result-item-directions:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+.locator-result-list .locator-result-item .result-item-distance,
+.locator-result-list .locator-result-item .result-item-phone {
+  float: right;
+}
+
+.locator-result-list .locator-result-item .result-item-distance:after,
+.locator-result-list .locator-result-item .result-item-phone:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.locator-result-list .locator-result-item .result-item-address {
+  font-size: 12px;
+  letter-spacing: 0.8px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+/* .wps-locator-map-wrap {
+    height: 100%;
+} */
+
+#locator-map-wrap {
+  background-color: #888;
+  min-height: 300px;
+}
+
+#locator-utils-wrap {
+  padding-top: 0;
+  padding-bottom: 0;
+  overflow: hidden;
+}
+
+#locator-content .fp-tableCell {
+  display: block;
+}
+
+.use-location-icon {
+  background-image: url("/wp-content/themes/msawheels/icons/location.svg");
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+}
+
+.use-location-icon.active,
+.use-location-btn.active .use-location-icon {
+  background-image: url("/wp-content/themes/msawheels/icons/location-active.svg");
+}
+
+@media (max-width: 767px) {
+  /*Store Locator*/
+  .locator-search-wrap .input-group-addon {
+    border: 0;
+  }
+  .locator-search-wrap .form-control {
+    border: 0;
+  }
+}
+
+@media (min-width: 480px) {
+  /*Store Locator*/
+  .locator-result-list .locator-result-item {
+    padding: 35px;
+  }
+  .locator-result-list .locator-result-item .result-item-address {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  /*Store Locator*/
+  .locator-search-wrap .input-group-addon {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .locator-search-wrap .input-group-addon>img {
+    width: 18px;
+  }
+  .locator-search-wrap .form-control {
+    font-size: 16px;
+    height: 60px;
+  }
+  .locator-result-list .locator-result-item {
+    padding: 35px 20px;
+  }
+  .use-location-icon {
+    background-size: 18px 18px;
+    height: 18px;
+    width: 18px;
+  }
+}
+
+@media (min-width: 992px) {
+  /*Store Locator*/
+  .locator-result-list .locator-result-item {
+    padding: 35px;
+  }
+}

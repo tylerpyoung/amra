@@ -1,0 +1,225 @@
+/* Collection Page */
+.details-background {
+	margin:  0;
+	width: 100%;
+	height: 100%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+  background: linear-gradient(
+    to bottom right, 
+    #E4E3D8,
+    #E4E3D8  10%,
+    #EFEEE7  10%,
+    #EFEEE7  20%,
+    #F7F6F4  20%,
+    #F7F6F4  30%, 
+    #FFFFFF  30%
+  );
+}
+
+/* Left column */
+.vehicle-image-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.vehicle-image-bg {
+	height: 250px;
+	width: 90%;	
+	border-radius: 10px;
+	position: relative;
+}
+
+.vehicle-image {
+	position: absolute;
+	height: 150px;
+	width: 80%;
+}
+
+.collection-name {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.filter-dropdown {
+	color:  black;
+}
+
+.filter-dropdown:before {
+	color: #F73845;
+	font-family: 'Font Awesome 5 Pro';
+	font-weight: 900;
+	content: "\f0d7";
+}
+
+.collapsed.filter-dropdown:before {
+	color: #F73845;
+	font-family: 'Font Awesome 5 Pro';
+	font-weight: 900;
+	content: "\f0da";
+}
+
+.text-small {
+	font-size: .8em;
+	margin-top: -10px;
+}
+
+a, a:link, a:visited {
+	color:  black;
+	text-decoration: none;
+}
+
+.vehicle-title {
+	margin-bottom: -0.5rem;
+}
+
+
+/* Right Column */
+.wheel-collection-container-row {
+	display: flex;
+	justify-content: space-around;
+}
+
+.wheel-details-container {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.wheel-details-image {
+	height:  300px;
+	width:  100%;
+}
+
+/* Wheel Carousel Section */
+/* Container */
+.carousel-container {
+	height: 530px;
+	margin-left:  -15px;
+	background-image: url("../images/cover2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+/* Top Bar */
+.carousel-list-tabs {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	white-space: nowrap;
+}
+
+
+.carousel-list-item {
+  background: rgba(0,0,0,0.75);
+  color: rgba(255,255,255,.5);
+  text-align: center;
+  height:  100%;
+  position: relative;
+
+ 	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	-ms-transition: .5s;
+	transition: .5s;
+}
+
+.carousel-item-text:after{
+	content: "";
+	position: absolute;
+	height: 0px;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+  background: linear-gradient(0deg, rgba(45,84,253,1) 50%, rgba(232,82,82,1) 50%);	
+
+	-webkit-transition: height .2s, opacity .2s;
+	-moz-transition: height .2s, opacity .2s;
+	-ms-transition: height .2s, opacity .2s;
+	transition: height .2s, opacity .2s;
+}
+
+.active-tab {
+	color: rgba(255,255,255,1);
+}
+
+/* undeline for active and hover tabs */
+.carousel-list-item:hover > .carousel-item-text:after {
+	height: 5px;
+	opacity: 1;
+}
+
+.carousel-list-item.active-tab > .carousel-item-text:after {
+	height: 5px;
+	opacity: 1;
+}
+
+.carousel-list-item:hover {
+	color: rgba(255,255,255,1);
+
+}
+
+
+/* Carousel Pages */
+.carousel-brand-info {
+	background-color: rgba(0,0,0, 0.75);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color:  white;
+}
+
+.carousel-brand-info button{
+	border-radius: 0;
+}
+
+.carousel-brand-images{
+	display:  flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	background-color: #F9F8F0;
+}
+
+/* American Racing Logo Text */
+.collection-text-container {
+	display: flex;
+	align-items: flex-end;
+	height:  475px;
+}
+
+.american-racing-stylized {
+  color: white;
+  font-size: 5rem;
+  font-family: sans-serif;
+  position: relative;
+  padding-bottom: 5px;
+  text-shadow: 0px 0px 45px rgba(0,0,0, .4);
+  z-index: 3;
+}
+
+.american-racing-stylized::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  height: 15px;
+  background: #ED3743;
+  width: 100%;
+}
+
+.american-racing-stylized::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 15px;
+  background: #0563AF;
+  width: 100%;
+}
