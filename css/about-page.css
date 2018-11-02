@@ -430,7 +430,6 @@ html, body {
 /* Media Queries */
 @media screen and (max-width: 900px)
 {
-
     .history-timeline ul li:nth-child(even) div {
         left: 48px !important;
         width: 27em;
@@ -515,8 +514,10 @@ html, body {
   }
   
   .history-timeline ul li.in-view:last-child div {
+    width: 40em !important;
     margin: 0 auto;
     margin-bottom: 350px;
+    margin-top: -80px;
   }
 
   .history-timeline ul li
@@ -628,6 +629,10 @@ h4.timeline-text
   .history-timeline ul li:nth-child(odd) div {
      left: 45px;
      width: 27em;
+  }
+
+  .history-timeline ul li:last-child div {
+      width: 59em !important;
   }
 
   .history-timeline ul li:nth-child(even) div p {
