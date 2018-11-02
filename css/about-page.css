@@ -670,3 +670,19 @@ h4.timeline-text
     margin-bottom: 425px;
   }
 }
+
+
+@media screen and (min-width: 1330px) {
+  .about-hero
+  {
+      background-position: 0 -35px;
+  }
+}
+
+
+@media screen and (min-width: 1650px) {
+  .about-hero
+  {
+      background-position: 0 -150px;
+  }
+}
