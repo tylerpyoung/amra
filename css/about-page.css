@@ -1,16 +1,25 @@
-html, body {
-    max-width: 100%;
+html,
+body
+{
     overflow-x: hidden;
+
+    max-width: 100%;
 }
 
 .about-hero
 {
-    background-image: url('../images/shelb.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0 0;
     width: 100%;
     height: 90vh;
+
+    background-image: url('../images/shelb.jpg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+}
+
+.mt-8
+{
+    margin-top: 8em;
 }
 
 .timeline-photo
@@ -24,6 +33,7 @@ html, body {
 .become-dealer-photo
 {
     height: 45em;
+
     background-image: url('../images/Cadi.jpeg');
     background-repeat: no-repeat;
     background-position: 0 -100px;
@@ -40,7 +50,6 @@ html, body {
 
 .american-racing-stylized
 {
-    margin-top: 200px;
     font-family: sans-serif;
     font-size: 7rem;
     font-weight: bold;
@@ -48,6 +57,7 @@ html, body {
     position: relative;
     z-index: 3;
 
+    margin-top: 200px;
     padding-bottom: 5px;
 
     color: white;
@@ -87,13 +97,16 @@ html, body {
 
 .video-container
 {
+    height: 60vh;
+
     background-color: #000;
 }
 
 .video
 {
-    width: 75vw;
-    height: 75vh;
+    width: 100%;
+    height: auto;
+    padding: 1em;
 }
 
 /* Timeline Above Photo */
@@ -221,18 +234,18 @@ html, body {
 
 .history-timeline ul li:last-child
 {
-    width: 0;
-    height: 0;
-    margin-top: 50px;
+    width: 0 !important;
+    height: 0 !important;
+    margin-top: 50px !important;
 }
 
 .history-timeline ul li.in-view:last-child
 {
-    width: 0;
-    height: 0;
-    margin-bottom: 75px;
+    width: !important;
+    height: 0 !important;
+    margin-bottom: 75px !important;
 
-    text-align: center;
+    text-align: center !important;
 }
 
 
@@ -386,8 +399,46 @@ html, body {
     opacity: 0;
 }
 
-.timeline-title:last-child {
-  text-align: center;
+.timeline-title:last-child
+{
+    text-align: center;
+}
+
+
+.history-timeline ul li.in-view:last-child
+{
+    display: flex;
+
+    width: 100vw !important;
+    height: 0 !important;
+    margin-top: 50px !important;
+    margin-bottom: 75px !important;
+    padding: 0 !important;
+
+    text-align: center !important;
+
+    justify-content: center;
+}
+
+.history-timeline ul li:last-child
+{
+    left: 0;
+
+    width: 0 !important;
+    height: 0 !important;
+    margin-top: 50px !important;
+}
+.history-timeline ul li
+{
+    position: relative;
+
+    width: 2px;
+    margin: 0 auto;
+    padding-top: 50px;
+
+    list-style-type: none;
+
+    background: #b2b1ae;
 }
 
 .history-timeline ul li:nth-child(odd) div
@@ -402,6 +453,11 @@ html, body {
 
 .history-timeline ul li:last-child div
 {
+    left: 0;
+
+    width: 100vh;
+    padding-top: 50px ;
+
     transform: translate3d(0, 100px, 0);
 }
 
@@ -430,8 +486,14 @@ html, body {
 /* Media Queries */
 @media screen and (max-width: 900px)
 {
-    .history-timeline ul li:nth-child(even) div {
+    /*  .video-container {
+      height: ;
+    } */
+
+    .history-timeline ul li:nth-child(even) div
+    {
         left: 48px !important;
+
         width: 27em;
     }
 
@@ -445,115 +507,135 @@ html, body {
         display: none;
     }
 
-    .become-dealer-photo {
-      padding:  0 !important;
-      background-position: -150px 0;
+    .become-dealer-photo
+    {
+        padding: 0 !important;
+
+        background-position: -150px 0;
     }
 
-    .timeline-photo {
-      background-position: -175px -25px;
-      background-size: 235%;
+    .timeline-photo
+    {
+        background-position: -175px -25px;
+        background-size: 235%;
     }
 
-    .american-racing-stylized {
-      margin-bottom: 30rem;
-      font-size: 4em;
+    .american-racing-stylized
+    {
+        font-size: 4em;
+
+        margin-bottom: 30rem;
     }
-  .american-racing-stylized::after {
-    bottom: 0px;
-  }
-  .american-racing-stylized::before {
-    top:  0px;
-  }
+    .american-racing-stylized::after
+    {
+        bottom: 0;
+    }
+    .american-racing-stylized::before
+    {
+        top: 0;
+    }
 
-  .timeline-title {
-    text-align: left;
-  }
+    .timeline-title
+    {
+        text-align: left;
+    }
 
-  .history-timeline ul {
-    padding: 0;
-  }
+    .history-timeline ul
+    {
+        padding: 0;
+    }
 
-  .history-timeline ul li div
-  {
-      right: 0;
-      left: 0;
+    .history-timeline ul li div
+    {
+        right: 0;
+        left: 0;
 
-      width: 25vw;
-      margin: 0;
-  }
+        width: 25vw;
+        margin: 0;
+    }
 
-  .timeline::before {
-    display: none;
-  }
+    .timeline::before
+    {
+        display: none;
+    }
 
-  .history-timeline ul li:nth-child(even) div
-  {
-      left: 0;
-      width: 85vw;
-      margin-left: 0;
-  }
+    .history-timeline ul li:nth-child(even) div
+    {
+        left: 0;
 
-  .history-timeline ul li:nth-child(odd) div
-  {
-      left: 0;
-      width: 90vw;
-      margin-left: 0;
-  }
+        width: 85vw;
+        margin-left: 0;
+    }
 
-  .history-timeline ul li:nth-child(even) div p
-  {
-    width: 45vw;
-    margin-left: 0;
-    text-align: left;
-  }
+    .history-timeline ul li:nth-child(odd) div
+    {
+        left: 0;
 
-  .history-timeline ul li:last-child div
-  {
-    margin-top: -70px;
+        width: 90vw;
+        margin-left: 0;
+    }
+
+    .history-timeline ul li:nth-child(even) div p
+    {
+        width: 45vw;
+        margin-left: 0;
+
+        text-align: left;
+    }
+
+  .history-timeline ul li:last-child::after {
+    left: 1px;
   }
   
   .history-timeline ul li.in-view:last-child div {
-    width: 40em !important;
+    width: 90% !important;
     margin: 0 auto;
-    margin-bottom: 350px;
-    margin-top: -80px;
+    margin-bottom: 350px !important;
+    margin-top: -55px;
+    left: -10px !important;
   }
 
-  .history-timeline ul li
-  {
-      margin-left: 20px;
-  }
-  .history-timeline ul li div
-  {
-      width: calc(100vw - 95px);
+  .history-timeline ul li.in-view:last-child {
+    margin-bottom: 265px !important;
   }
 
-  .about-hero
-  {
-      background-position: -100px 0;
-  }
+    .history-timeline ul li
+    {
+        margin-left: 20px;
+    }
+    .history-timeline ul li div
+    {
+        width: calc(100vw - 95px);
+    }
 
-  .history-text
-  {
-      line-height: 2em;
-  }
+    .about-hero
+    {
+        background-position: -100px 0;
+    }
 
-  h4.timeline-text
-  {
-      line-height: 1.5em;
-  }
+    .history-text
+    {
+        line-height: 2em;
+    }
 
-  .history-timeline ul li:nth-child(odd) div {
-     left: 45px;
-     width: 37em;
-  }
+    h4.timeline-text
+    {
+        line-height: 1.5em;
+    }
 
-    .history-timeline ul li:nth-child(even) div {
-     left: 45px;
-     width: 37em;
-  }
+    .history-timeline ul li:nth-child(odd) div
+    {
+        left: 45px;
 
+        width: 37em;
+    }
+
+    .history-timeline ul li:nth-child(even) div
+    {
+        left: 45px;
+
+        width: 37em;
+    }
 }
 
 
@@ -566,42 +648,51 @@ html, body {
 
     .video-container
     {
-        height: 75vh;
+        height: 30vh;
     }
 
-    
+
     .blog-post-image
     {
         display: none;
     }
 
-    .history-timeline ul li:nth-child(even) div h1 {
+    .history-timeline ul li:nth-child(even) div h1
+    {
         margin-left: -15px;
     }
-    
-    .history-timeline ul li:nth-child(even) div p {
-      left: 5px !important;
-      width: 20em !important;
+
+    .history-timeline ul li:nth-child(even) div p
+    {
+        left: 5px !important;
+
+        width: 20em !important;
     }
 
-    .history-timeline ul li:nth-child(even) div {
-      left: 15px !important;
-      width: 20em !important;
+    .history-timeline ul li:nth-child(even) div
+    {
+        left: 15px !important;
+
+        width: 20em !important;
     }
 
-    .history-timeline ul li:nth-child(odd) div {
-      left: 5px !important;
-      width: 20em !important;
+    .history-timeline ul li:nth-child(odd) div
+    {
+        left: 5px !important;
+
+        width: 20em !important;
     }
+
+  .history-timeline ul li.in-view:last-child div {
+    width: 90% !important;
+    margin: 0 auto;
+    margin-bottom: 350px !important;
+    margin-top: -55px;
+    left: -10px !important;
+  }
 
   .history-timeline ul li.in-view:last-child {
-    width: 0;
-    height: 0;
-    margin-bottom: 245px;
-    text-align: center;
-  }
-  .history-timeline ul li.in-view.py-5:last-child div {
-    width: 32em !important;
+    margin-bottom: 285px !important;
   }
 }
 
@@ -625,69 +716,84 @@ h4.timeline-text
 }
 
 
-@media screen and (max-width: 1330px) {
-  .history-timeline ul li:nth-child(odd) div {
-     left: 45px;
-     width: 27em;
-  }
+@media screen and (max-width: 1330px)
+{
+    .history-timeline ul li:nth-child(odd) div
+    {
+        left: 45px;
 
-  .history-timeline ul li:last-child div {
-      width: 59em !important;
-  }
+        width: 27em;
+    }
 
-  .history-timeline ul li:nth-child(even) div p {
-      left: 45px;
-      width: 27em;
-      margin-left: -15px;
-  }
+    .history-timeline ul li:last-child div
+    {
+        width: 59em !important;
+    }
 
-  .history-timeline ul li:nth-child(odd) div img {
-      margin-left: -565px;
-      margin-top: -255px; 
-  }
+    .history-timeline ul li:nth-child(even) div p
+    {
+        left: 45px;
 
-  .history-timeline ul li:nth-child(even) div img {
-     margin-top: -180px;
-  }
-  
-  .history-timeline ul li:nth-child(even) div {
+        width: 27em;
+        margin-left: -15px;
+    }
+
+    .history-timeline ul li:nth-child(odd) div img
+    {
+        margin-top: -255px;
+        margin-left: -565px;
+    }
+
+    .history-timeline ul li:nth-child(even) div img
+    {
+        margin-top: -230px;
+    }
+
+    /*   .history-timeline ul li:nth-child(even) div {
      left: -480px;
      width: 27em;
-  }
+  } */
 
-  .blog-post-image {
-     width: 450px;
-     height: 340px;
-  }  
-  
-  .timeline-title {
-    margin-right: -15px;
-  }
+    .blog-post-image
+    {
+        width: 450px;
+        height: 340px;
+    }
+
+    .timeline-title
+    {
+        margin-right: -15px;
+    }
 }
 
-@media screen and (max-width: 500px) {
-  .history-timeline ul li.in-view.py-5:last-child div {
-    width: 19em !important;
-    margin-top: -60px;
-  }
+@media screen and (max-width: 500px)
+{
+    .history-timeline ul li.in-view.py-5:last-child div
+    {
+        width: 19em !important;
+        margin-top: -60px !important;
+    }
 
-  .history-timeline ul li.in-view:last-child {
-    margin-bottom: 425px;
-  }
-}
-
-
-@media screen and (min-width: 1330px) {
-  .about-hero
-  {
-      background-position: 0 -35px;
-  }
+    .history-timeline ul li.in-view:last-child
+    {
+        margin-bottom: 450px !important;
+    }
 }
 
 
-@media screen and (min-width: 1650px) {
-  .about-hero
-  {
-      background-position: 0 -150px;
-  }
+@media screen and (min-width: 1330px)
+{
+    .about-hero
+    {
+        background-position: 0 -35px;
+    }
+}
+
+
+@media screen and (min-width: 1650px)
+{
+    .about-hero
+    {
+        background-position: 0 -150px;
+    }
 }

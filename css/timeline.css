@@ -7,7 +7,8 @@ body {
 
 .section-headline {
   font-size: 2.5em;
-  position: absolute;
+  position: relative;
+  padding-bottom: 20px;
   top: 45px;
   left:  20%;
 
@@ -42,6 +43,13 @@ body {
   margin-top: 5px;
   margin-bottom: -18px;
 
+}
+
+.read-more-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: -50px;
 }
 
 .timeline-posts div {
@@ -107,13 +115,13 @@ body {
 
 .timeline-container ul li:nth-child(even) div {
   text-align: right;
-  left: -500px;
+  left: -490px;
 }
 
 .timeline-container ul li:nth-child(even) div::before {
     height: 1px;
     width: 30px;
-    right: -47px;
+    right: -38px;
     border-width: 0 0 2px 0;
     border-color: #B2B1AE;
 }

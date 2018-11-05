@@ -25,6 +25,10 @@ body
     );
 }
 
+
+.product-buttons {
+    font-size: .75rem;
+}
 .bg-tan
 {
     background: #f5f3e8;
@@ -122,4 +126,43 @@ body
             transform: translate3d(0px, 0px, 0px);
 
     opacity: 1;
+}
+
+
+@media screen and (max-width: 800px) {
+    .mx-5 {
+        margin:  .25em !important;
+    }
+    .details-options-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .details-options-icons {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .product-buttons {
+        font-size: .75rem;
+    }
+
+    .py-3 {
+        padding-top: .5rem !important;
+        padding-bottom: .5rem !important;
+    }
+    .finish-dropdown{
+        white-space: nowrap;
+    }
+}
+
+
+@media screen and (max-width: 350px) {
+    .product-buttons {
+        font-size: .5rem;
+    }
+    .find-dealer {
+        display: flex;
+        justify-content: center;
+    }
 }
