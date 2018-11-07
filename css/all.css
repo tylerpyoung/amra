@@ -101,7 +101,7 @@ body {
   background-color: #F9F8F0;
 }
 
-.wheel-image {
+.index-wheel-image {
   height: 175px;
   width: 175px;
 }
@@ -110,6 +110,13 @@ body {
   .w-50 {
     width: 80% !important;
   }
+}
+
+@media screen and (max-width:1307px) and (min-width:1199px) {
+  .index-wheel-image:nth-child(odd){
+    display: none !important;
+  }
+
 }
 
 /* Timeline */
@@ -265,8 +272,6 @@ body {
     padding-bottom: 20px;
   }
 
-
-
   .timeline-container ul li div {
     width: 250px;
   }
@@ -322,7 +327,7 @@ body {
   background-size: cover;
 }
 
-.timeline-photo {
+.about-timeline-photo {
   background-image: url('../images/PALAMIDES.jpg');
   background-repeat: no-repeat;
   background-position: 0 -48px;
@@ -497,7 +502,10 @@ body {
 .history-about-timeline ul li:last-child::after {
   position: absolute;
   top: -50px;
-  left: 50%;
+  left: calc(50% - 8px);
+  left: -webkit-calc(50% - 8px);
+  left: -moz-calc(50% - 9px);
+  left: -o-calc(50% - 8px);
   width: 10px;
   height: 10px;
   content: '';
@@ -747,7 +755,7 @@ body {
     width: 90% !important;
     margin: 0 auto;
     margin-bottom: 350px !important;
-    margin-top: -55px;
+    margin-top: 0px;
     left: -10px !important;
   }
 
@@ -822,7 +830,7 @@ body {
     width: 90% !important;
     margin: 0 auto;
     margin-bottom: 350px !important;
-    margin-top: -55px;
+    margin-top: 0px;
     left: -10px !important;
   }
 
@@ -894,7 +902,7 @@ h4.about-timeline-text {
 @media screen and (max-width:500px) {
   .history-about-timeline ul li.in-view.py-5:last-child div {
     width: 19em !important;
-    margin-top: -60px !important;
+    margin-top: -40px !important;
   }
 
   .history-about-timeline ul li.in-view:last-child {
@@ -1245,6 +1253,61 @@ a:visited {
   color: rgba(255, 255, 255, 1);
 }
 
+/* BG IMAGES COLLECTION CAROUSEL */
+/* ----------------------------------------- */
+
+.carousel-item-af {
+  padding-top: 15px;
+  background: url("../images/collections/arforged.jpeg") no-repeat center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.carousel-item-torq {
+  padding-top: 15px;
+  background: url("../images/collections/torq.jpeg") no-repeat center center;  
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.carousel-item-custom {
+  padding-top: 15px;
+  background: url("../images/collections/custom.jpeg") no-repeat center center ;  
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.carousel-item-heritage {
+  padding-top: 15px;
+  background: url("../images/collections/heritage2.jpeg") no-repeat center center ;  
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.carousel-item-modern {
+  padding-top: 15px;
+  background: url("../images/collections/modern.jpeg") no-repeat center center ;  
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.carousel-item-atx {
+  padding-top: 15px;
+  background: url("../images/collections/atx.jpeg") no-repeat center center ;  
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+
+
+
+
 /* Carousel Pages */
 .carousel-brand-info {
   background-color: rgba(0, 0, 0, 0.75);
@@ -1357,6 +1420,10 @@ body {
 
 .product-buttons {
   font-size: .75rem;
+}
+
+.back-to-results{
+  text-decoration: none;
 }
 
 .large-image {
