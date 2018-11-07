@@ -85,7 +85,7 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 .carousel-brand-info button {
@@ -257,6 +257,16 @@ body {
 
 /* Media Queries */
 @media screen and (max-width:900px) {
+  .section-headline {
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+
+
+
   .timeline-container ul li div {
     width: 250px;
   }
@@ -1030,13 +1040,13 @@ h4.about-timeline-text {
   height: 650px;
 }
 
-.carousel-inner {
+.blog-carousel-inner {
   height: 625px;
   display: flex;
   justify-content: center;
 }
 
-.carousel-item {
+.blog-carousel-item {
   height: 500px;
   width: 100%;
 }
@@ -1046,9 +1056,10 @@ h4.about-timeline-text {
   align-items: center;
 }
 
-.carousel-item.active {
+.blog-carousel-item.active {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .carousel-item-left.carousel-item-next {
@@ -1059,7 +1070,7 @@ h4.about-timeline-text {
 .blog-photo {
   margin-top: 75px;
   height: 100%;
-  width: 100%;
+  width: 80%;
 }
 
 .blog-photo-large {
@@ -1173,7 +1184,7 @@ a:visited {
 /* Wheel Carousel Section */
 /* Container */
 .collection-carousel-container {
-  height: 530px;
+  height: 600px;
   margin-left: 0;
   background-image: url("../images/cover2.jpg");
   background-size: cover;
@@ -1248,7 +1259,7 @@ a:visited {
   border-radius: 0;
 }
 
-.carousel-brand-images {
+.collection-carousel-brand-images {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1267,7 +1278,7 @@ a:visited {
 .collection-page-text-container {
   display: flex;
   align-items: flex-end;
-  height: 445px;
+  height: 515px;
 }
 
 .collection-american-racing-stylized {
@@ -1278,7 +1289,7 @@ a:visited {
   padding-bottom: 0px;
   text-shadow: 0px 0px 45px rgba(0, 0, 0, .4);
   z-index: 3;
-  bottom: 30px;
+  bottom: 10px;
 }
 
 .collection-american-racing-stylized::before {
@@ -1313,10 +1324,11 @@ a:visited {
   }
 
   .collection-american-racing-stylized {
-    margin-bottom: 400px;
     margin-left: 15px;
     font-size: 4em;
-    bottom: 0;
+    position: absolute;
+    top: 10px;
+    bottom: auto;
   }
 
   .collection-carousel-container {
