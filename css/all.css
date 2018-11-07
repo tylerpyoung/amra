@@ -10,6 +10,14 @@ body {
   background: #f5f3e8;
 }
 
+.bg-ar-red {
+  background: #F73845;
+}
+
+.text-ar-red {
+  color: #F73845;
+}
+
 .mt-8 {
   margin-top: 8em;
 }
@@ -155,7 +163,13 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: -50px;
+  margin-top: -66px;
+}
+
+.button-shadow {
+  -webkit-box-shadow: 0px 10px 41px 6px rgba(128,128,128,0.48);
+  -moz-box-shadow: 0px 10px 41px 6px rgba(128,128,128,0.48);
+  box-shadow: 0px 10px 41px 6px rgba(128,128,128,0.48);
 }
 
 .timeline-posts div {
