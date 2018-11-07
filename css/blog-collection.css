@@ -1,0 +1,106 @@
+.blog-photo-container {
+	height: 800px;
+	background-image: url("../images/shelbygt500.jpeg");
+	background-position: cover;	
+	width: 100%;
+	position: relative;
+}
+
+.container-fader-helper {
+	position: absolute;
+	top: 775px;
+	height: 25px;
+	width: 100%;
+	background: -moz-linear-gradient(top, rgba(17,17,17,0) 0%, rgba(17,17,17,0.61) 59%, rgba(17,17,17,0.66) 39%, rgba(17,17,17,1) 83%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(17,17,17,0) 0%, rgba(17,17,17,0.61) 59%, rgba(17,17,17,0.66) 39%, rgba(17,17,17,1) 83%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(17,17,17,0) 0%, rgba(17,17,17,0.61) 59%, rgba(17,17,17,0.66) 39%, rgba(17,17,17,1) 83%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#262626',GradientType=0 ); /* IE6-9 */
+}
+
+.bg-262626 {
+	background-color: rgba(17,17,17,1) !important;
+	display: block;
+	overflow: auto;
+	padding-bottom: 150px;
+}
+
+.blog-header-content-container{
+	bottom: -525px;
+	position: absolute;
+	display: table-cell;
+	padding-left: 50px !important;
+}
+
+.small-blog-post-photo {
+	width: 100%;
+	padding-bottom: 66%;
+}
+
+.small-blog-post-text {
+	display: flex;
+	flex-direction: column;
+	align-content: space-between;
+	width: 100%;
+	height: 150px;
+}
+
+.small-blog-post-text span {
+	bottom: 15px;
+	position: absolute;
+}
+
+.american-racing-stylized-blogs {
+	width: 100%;
+  color: white;
+  font-size: 5rem;
+  font-family: sans-serif;
+  position: relative;
+  padding-bottom: 0px;
+  text-shadow: 0px 0px 45px rgba(0,0,0, .4);
+  z-index: 3;
+  bottom: 10px;
+}
+
+.american-racing-stylized-blogs::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  height: 15px;
+  background: #ED3743;
+  width: 100%;
+}
+
+.american-racing-stylized-blogs::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 15px;
+  background: #0563AF;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 800px) {
+	.american-racing-stylized-blogs {
+	  font-size: 3.5rem;
+	}
+
+	.blog-header-content-container{
+		bottom: -20px;
+		position: absolute;
+		display: table-cell;
+		padding-left: 15px !important;
+	}
+
+	.blog-photo-container {
+		height: 500px;
+		background-image: url("../images/shelbygt500.jpeg");
+		background-position: cover;	
+		width: 100%;
+		position: relative;
+	}
+}
