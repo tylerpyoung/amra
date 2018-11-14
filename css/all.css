@@ -166,7 +166,7 @@ body {
   margin-top: -66px;
 }
 
-.button-shadow {
+.box-shadow {
   -webkit-box-shadow: 0px 10px 41px 6px rgba(128,128,128,0.48);
   -moz-box-shadow: 0px 10px 41px 6px rgba(128,128,128,0.48);
   box-shadow: 0px 10px 41px 6px rgba(128,128,128,0.48);
@@ -1055,7 +1055,17 @@ h4.about-timeline-text {
 .blog-post {
   margin: 0;
   width: 100%;
-  background: linear-gradient(to bottom right, #E4E3D8, #E4E3D8  10%, #EFEEE7  10%, #EFEEE7  20%, #F7F6F4  20%, #F7F6F4  30%, #FFFFFF  30%);
+    background: 
+    linear-gradient(
+      150deg, 
+      #C8C5B1, 
+      #C8C5B1  125px, 
+      #D8D5C5  125px, 
+      #D8D5C5  250px, 
+      #E0DCCD  250px, 
+      #E0DCCD  375px, 
+      #F4F2E7  375px
+    );
 }
 
 .photo-container {
@@ -1123,7 +1133,70 @@ h4.about-timeline-text {
   height: 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background: linear-gradient(to bottom right, #E4E3D8, #E4E3D8  10%, #EFEEE7  10%, #EFEEE7  20%, #F7F6F4  20%, #F7F6F4  30%, #FFFFFF  30%);
+    background: 
+    linear-gradient(
+      150deg, 
+      #C8C5B1, 
+      #C8C5B1  125px, 
+      #D8D5C5  125px, 
+      #D8D5C5  250px, 
+      #E0DCCD  250px, 
+      #E0DCCD  375px, 
+      #F4F2E7  375px
+    );
+}
+
+
+.collection-select-vehicle {
+  width: 100%;
+  background-color: #262626;
+  opacity: .95;
+  padding: 1em;
+  padding-right: 1.5em;
+  position: fixed;
+  bottom: 0;
+  z-index: 3;
+  text-align: right;
+}
+
+.bg-block-container {
+  transform:  rotate(-45deg);
+  top: 0;
+  left: 0;
+  right: 0;  
+  margin: -800px;
+  z-index: -1000;
+  position: fixed;
+}
+
+.bg-block {
+  display: inline-block;
+  height: 160px;
+  background: #D8D5C5;
+  width: 100%;
+}
+
+.bg-block::before {
+  content: "";
+  top: -150px;
+  position: relative;
+  display: inline-block;
+  height: 150px;
+  background: #C8C5B1;
+  width: 100%;
+}
+
+.bg-block::after {
+  content: "";
+  top: -10px;
+  display: inline-block;
+  height: 150px;
+  background: #EBE8DA;
+  width: 100%;
+}
+
+body {
+  background: #F5F3E8;
 }
 
 /* Left column */
@@ -1131,6 +1204,7 @@ h4.about-timeline-text {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .vehicle-image-bg {
@@ -1143,7 +1217,18 @@ h4.about-timeline-text {
 .collection-vehicle-image {
   position: absolute;
   height: 150px;
-  width: 80%;
+  width: 100%;
+  top: 50px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+
+@media screen and (min-width:990px) and (max-width:1080px) {
+  .product-buttons {
+    font-size: .65em !important;
+  }     
 }
 
 .collection-name {
@@ -1429,7 +1514,17 @@ body {
 .details-background {
   width: 100%;
   margin: 0;
-  background: linear-gradient(to bottom right, #e4e3d8, #e4e3d8  10%, #efeee7  10%, #efeee7  20%, #f7f6f4  20%, #f7f6f4  30%, #fff  30%);
+    background: 
+    linear-gradient(
+      150deg, 
+      #C8C5B1, 
+      #C8C5B1  125px, 
+      #D8D5C5  125px, 
+      #D8D5C5  250px, 
+      #E0DCCD  250px, 
+      #E0DCCD  375px, 
+      #F4F2E7  375px
+    );
 }
 
 .product-buttons {

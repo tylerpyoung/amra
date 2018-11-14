@@ -797,3 +797,623 @@ h4.timeline-text
         background-position: 0 -150px;
     }
 }
+
+
+/* ----------------------------------------------------------------- */
+
+/* ABOUT PAGE */
+.about-hero {
+  width: 100%;
+  height: 90vh;
+  background-image: url(https://american.wheelproshosting.com/wp-content/uploads/2018/11/shelb.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+}
+
+.about-timeline-photo {
+  background-image: url(https://american.wheelproshosting.com/wp-content/uploads/2018/11/PALAMIDES.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 -48px;
+  background-size: cover;
+}
+
+.become-dealer-photo {
+  height: 45em;
+  background-image: url(https://american.wheelproshosting.com/wp-content/uploads/2018/11/Cadi.jpeg);
+  background-repeat: no-repeat;
+  background-position: 0 -100px;
+  background-size: cover;
+}
+
+/* American Racing Logo Text */
+.collection-text-container {
+  display: flex;
+  align-items: flex-end;
+}
+
+.american-racing-stylized {
+  font-family: sans-serif;
+  font-size: 6rem !important;
+  font-weight: bold;
+  position: relative;
+  z-index: 3;
+  margin-top: 200px !important;
+  padding-bottom: 5px;
+  color: white;
+  text-shadow: 0 0 45px rgba(0, 0, 0, .4);
+}
+
+.american-racing-stylized::before {
+  position: absolute;
+  z-index: -1;
+  top: 15px;
+  left: 0;
+  width: 100%;
+  height: 20px !important;
+  content: '';
+  background: #ed3743;
+}
+
+.american-racing-stylized::after {
+  position: absolute;
+  z-index: -1;
+  bottom: 15px;
+  left: 0;
+  width: 100%;
+  height: 20px !important;
+  content: '';
+  background: #0563af;
+}
+
+.video-container {
+  height: 60vh;
+  background-color: #000;
+}
+
+.video {
+  width: 100%;
+  height: auto;
+  padding: 1em;
+}
+
+/* Timeline Above Photo */
+.about-timeline-start {
+  position: relative;
+}
+
+.about-timeline-photo {
+  height: 75vh;
+}
+
+.about-timeline-start::before {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  left: 0;
+  width: 2px;
+  height: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  content: '';
+  background: #b2b1ae;
+}
+
+.in-view:nth-child(even) {
+    margin-top: -15px;
+}
+
+.about-timeline-start::after {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  content: '';
+  border-radius: 50%;
+  background: #ed3743;
+}
+
+/* about-Timeline */
+.about-timeline {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-top: 75px;
+  margin-bottom: 150px;
+}
+
+.about-timeline::before {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  left: 0;
+  width: 2px;
+  height: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  content: '';
+  background: #b2b1ae;
+}
+
+.about-timeline-title {
+  font-family: 'TeXGyreAdventorRegular';
+  font-weight: bold;
+  font-style: normal;
+  margin-top: 10px;
+  color: #f73845;
+}
+
+.about-timeline-date {
+  font-family: 'TeXGyreAdventorRegular';
+  font-weight: normal;
+  font-style: normal;
+  margin-top: 5px;
+  margin-bottom: -18px;
+}
+
+.about-timeline-posts div {
+  width: 42vw;
+}
+
+.history-about-timeline {
+  padding-top: 50px;
+}
+
+.history-about-timeline ul {
+  padding: 49px 0;
+}
+
+.history-about-timeline ul li {
+  position: relative;
+  width: 2px;
+  margin: 0 auto;
+  padding-top: 50px;
+  list-style-type: none;
+  background: #b2b1ae;
+}
+
+.history-about-timeline ul li:last-child {
+  width: 0 !important;
+  height: 0 !important;
+  margin-top: 50px !important;
+}
+
+.history-about-timeline ul li.in-view:last-child {
+  height: 0 !important;
+  margin-bottom: 75px !important;
+  text-align: center !important;
+}
+
+.history-about-timeline ul li:last-child::after {
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 8px);
+  left: -webkit-calc(50% - 8px);
+  left: -moz-calc(50% - 9px);
+  left: -o-calc(50% - 8px);
+  width: 10px;
+  height: 10px;
+  content: '';
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+
+.history-about-timeline ul li::after {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  content: '';
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+
+.history-about-timeline ul li div {
+  position: relative;
+  top: -72px;
+  width: 450px;
+  padding: 15px;
+  color: #3a3b40;
+}
+
+.history-about-timeline ul li div::before {
+  position: absolute;
+  top: 26px;
+  width: 0;
+  height: 0;
+  content: '';
+  border-style: solid;
+}
+
+.history-about-timeline ul li:nth-child(odd) div {
+  left: 45px;
+  width: 37em;
+}
+
+.history-about-timeline ul li:nth-child(even) div p {
+  left: 45px;
+  width: 37em;
+  margin-left: -175px;
+}
+
+.history-about-timeline ul li:nth-child(odd) div img {
+  left: 45px;
+  margin-left: -710px;
+}
+
+.history-about-timeline ul li:nth-child(even) div img {
+  left: 45px;
+  margin-left: 540px;
+}
+
+.history-about-timeline ul li:last-child div img {
+  left: 45px;
+  margin: 0;
+}
+
+.history-about-timeline ul li:nth-child(odd) div::before {
+  left: -40px;
+  width: 30px;
+  height: 1px;
+  border-width: 0 0 2px 0;
+  border-color: #b2b1ae;
+}
+
+.history-about-timeline ul li:nth-child(even) div {
+  left: -500px;
+  text-align: right;
+}
+
+.history-about-timeline ul li:last-child div {
+  width: 52vw;
+  text-align: center;
+}
+
+.history-about-timeline ul li:nth-child(even) div::before {
+  right: -47px;
+  width: 30px;
+  height: 1px;
+  border-width: 0 0 2px 0;
+  border-color: #b2b1ae;
+}
+
+.history-about-timeline ul li:last-child div::before {
+  width: 0;
+  height: 0;
+  content: '';
+}
+
+/* Animations */
+.history-about-timeline ul li.in-view::after {
+  background: #f73845;
+}
+
+.history-about-timeline ul li div {
+  visibility: hidden;
+  transition: all .5s ease-in-out;
+  opacity: 0;
+}
+
+.about-timeline-title:last-child {
+  text-align: center;
+}
+
+.history-about-timeline ul li.in-view:last-child {
+  display: flex;
+  width: 100vw !important;
+  height: 0 !important;
+  margin-top: 50px !important;
+  margin-bottom: 75px !important;
+  padding: 0 !important;
+  text-align: center !important;
+  justify-content: center;
+}
+
+.history-about-timeline ul li:last-child {
+  left: 0;
+  width: 0 !important;
+  height: 0 !important;
+  margin-top: 50px !important;
+}
+
+.history-about-timeline ul li {
+  position: relative;
+  width: 2px;
+  margin: 0 auto;
+  padding-top: 50px;
+  list-style-type: none;
+  background: #b2b1ae;
+}
+
+.history-about-timeline ul li:nth-child(odd) div {
+  transform: translate3d(200px, 0, 0);
+}
+
+.history-about-timeline ul li:nth-child(even) div {
+  transform: translate3d(-200px, 0, 0);
+}
+
+.history-about-timeline ul li:last-child div {
+  left: 0;
+  width: 100vh;
+  padding-top: 50px;
+  transform: translate3d(0, 100px, 0);
+}
+
+.history-about-timeline ul li.in-view div {
+  visibility: visible;
+  transform: none;
+  opacity: 1;
+}
+
+.blog-post-image {
+  width: 600px;
+  height: 400px;
+  margin-top: -190px;
+}
+
+.blog-post-image:nth-child(odd) {
+  margin-left: 240px;
+}
+
+.history-about-timeline ul li:nth-child(3) div img {
+  margin-top: -280px;
+}
+
+/* Media Queries */
+@media screen and (max-width:900px) {
+  .history-about-timeline ul li:nth-child(even) div {
+    left: 48px !important;
+    width: 27em;
+  }
+
+  .history-about-timeline ul li div {
+    width: 250px;
+  }
+
+  .history-about-timeline ul li div::before {
+    display: none;
+  }
+
+  .become-dealer-photo {
+    padding: 0 !important;
+    background-position: -150px 0;
+  }
+
+  .about-timeline-photo {
+    background-position: -175px -25px;
+    background-size: 235%;
+  }
+
+  .american-racing-stylized {
+    font-size: 4em;
+    margin-bottom: 30rem;
+  }
+
+  .american-racing-stylized::after {
+    bottom: 0;
+  }
+
+  .american-racing-stylized::before {
+    top: 0;
+  }
+
+  .about-timeline-title {
+    text-align: left;
+  }
+
+  .history-about-timeline ul {
+    padding: 0;
+  }
+
+  .history-about-timeline ul li div {
+    right: 0;
+    left: 0;
+    width: 25vw;
+    margin: 0;
+  }
+
+  .about-timeline::before {
+    display: none;
+  }
+
+  .history-about-timeline ul li:nth-child(even) div {
+    left: 0;
+    width: 85vw;
+    margin-left: 0;
+  }
+
+  .history-about-timeline ul li:nth-child(odd) div {
+    left: 0;
+    width: 90vw;
+    margin-left: 0;
+  }
+
+  .history-about-timeline ul li:nth-child(even) div p {
+    width: 45vw;
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .history-about-timeline ul li:last-child::after {
+    left: 1px;
+  }
+
+  .history-about-timeline ul li.in-view:last-child div {
+    width: 90% !important;
+    margin: 0 auto;
+    margin-bottom: 350px !important;
+    margin-top: 0px;
+    left: -10px !important;
+  }
+
+  .history-about-timeline ul li.in-view:last-child {
+    margin-bottom: 265px !important;
+  }
+
+  .history-about-timeline ul li {
+    margin-left: 20px;
+  }
+
+  .history-about-timeline ul li div {
+    width: calc(100vw - 95px);
+  }
+
+  .about-hero {
+    background-position: -100px 0;
+  }
+
+  .history-text {
+    line-height: 2em;
+  }
+
+  h4.about-timeline-text {
+    line-height: 1.5em;
+  }
+
+  .history-about-timeline ul li:nth-child(odd) div {
+    left: 45px;
+    width: 37em;
+  }
+
+  .history-about-timeline ul li:nth-child(even) div {
+    left: 45px;
+    width: 37em;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .about-hero {
+    background-position: -425px 0;
+  }
+
+  .video-container {
+    height: 30vh;
+  }
+
+  .blog-post-image {
+    display: none;
+  }
+
+  .history-about-timeline ul li:nth-child(even) div h1 {
+    margin-left: -15px;
+  }
+
+  .history-about-timeline ul li:nth-child(even) div p {
+    left: 5px !important;
+    width: 20em !important;
+  }
+
+  .history-about-timeline ul li:nth-child(even) div {
+    left: 15px !important;
+    width: 20em !important;
+  }
+
+  .history-about-timeline ul li:nth-child(odd) div {
+    left: 5px !important;
+    width: 20em !important;
+  }
+
+  .history-about-timeline ul li.in-view:last-child div {
+    width: 90% !important;
+    margin: 0 auto;
+    margin-bottom: 350px !important;
+    margin-top: 0px;
+    left: -10px !important;
+  }
+
+  .history-about-timeline ul li.in-view:last-child {
+    margin-bottom: 285px !important;
+  }
+
+}
+
+.get-started-button {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.history-text {
+  line-height: 2em;
+}
+
+h4.about-timeline-text {
+  line-height: 1.5em;
+}
+
+@media screen and (max-width:1330px) {
+  .history-about-timeline ul li:nth-child(odd) div {
+    left: 45px;
+    width: 27em;
+  }
+
+  .history-about-timeline ul li:last-child div {
+    width: 59em !important;
+  }
+
+  .history-about-timeline ul li:nth-child(even) div p {
+    left: 45px;
+    width: 27em;
+    margin-left: 30px;
+  }
+
+  .history-about-timeline ul li:nth-child(odd) div img {
+    margin-top: -255px;
+    margin-left: -565px;
+  }
+
+  .history-about-timeline ul li:nth-child(even) div img {
+    margin-top: -230px;
+  }
+
+  .blog-post-image {
+    width: 450px;
+    height: 340px;
+  }
+
+  .home-blog-post-image:nth-child(odd) {
+      margin-left: 0px;
+  }
+  .home-blog-post-image {
+      width: 600px;
+      height: 400px;
+      margin-top: 0px;
+  }
+
+  .about-timeline-title {
+    margin-right: -15px;
+  }
+
+}
+
+@media screen and (max-width:500px) {
+  .history-about-timeline ul li.in-view.py-5:last-child div {
+    width: 19em !important;
+    margin-top: -40px !important;
+  }
+
+  .history-about-timeline ul li.in-view:last-child {
+    margin-bottom: 450px !important;
+  }
+
+}
+
+@media screen and (min-width:1330px) {
+  .about-hero {
+    background-position: 0 -35px;
+  }
+
+}
+
+@media screen and (min-width:1650px) {
+  .about-hero {
+    background-position: 0 -150px;
+  }
+
+}

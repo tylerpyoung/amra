@@ -7,6 +7,50 @@
 	border: solid 1em transparent;
 }
 
-.shop-collection-container {
+.p-dropdown {
+	padding: 2em 7em;
+}
 
+.dropdown-collection-name {
+	color:  white;
+	position: absolute;
+	z-index: 2;
+	bottom: 0;
+	padding-left: 10px;
+}
+
+.m-dropdown-collection-card {
+	margin-top: .25rem!important;
+	margin-bottom: .25rem!important;
+	padding-left: .25rem!important;
+	padding-right: .25rem!important;
+}
+
+@media (max-width: 767px) {
+	.wheel-dropdown {
+		background-color: #262626;
+	}
+	.wheel-dropdown-title {
+		color:  white;
+	}
+	.p-dropdown {
+		padding: 1rem !important;
+	}
+	.m-dropdown-collection-card {
+		margin-top: .5rem!important;
+		margin-bottom: .5rem!important;
+	}
+	.shop-vehicle-text{
+		color: white;
+	}
+	.photo-container {
+		padding: 0 .5em;
+	}
+}
+
+
+@media (max-width: 1000px) {
+	.p-dropdown {
+		padding: 2rem 4rem;
+	}
 }
